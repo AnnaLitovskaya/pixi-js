@@ -1,5 +1,5 @@
-const { db } = require('../db');
 const { DataTypes } = require('sequelize');
+const { db } = require('../db');
 
 const Highscore = db.define('highscore', {
   score: {

@@ -1,5 +1,7 @@
+/* eslint-disable no-console */
+
 const { app } = require('./app');
-const syncAndSeed = require('./db/seed.js');
+const syncAndSeed = require('./db/seed');
 
 const port = process.env.PORT || 3000;
 

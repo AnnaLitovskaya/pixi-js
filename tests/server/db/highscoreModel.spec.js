@@ -32,7 +32,7 @@ it('Game name is valid', async () => {
     newGame.validate();
   } catch (error) {
     expect(error.message).toBe(
-      'invalid input value for enum enum_highscores_game: "Tic Tac Toc"'
+      'invalid input value for enum enum_highscores_game: "Tic Tac Toc"',
     );
   }
 });

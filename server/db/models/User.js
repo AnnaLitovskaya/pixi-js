@@ -1,5 +1,5 @@
-const { db } = require('../db');
 const { DataTypes } = require('sequelize');
+const { db } = require('../db');
 
 // const jwt = require('jsonwebtoken');
 // const bcrypt = require('bcrypt');
@@ -43,7 +43,7 @@ const User = db.define('user', {
   },
 });
 
-//authenticates user
+// authenticates user
 /*
 User.authenticate = async (creds) => {
   try {

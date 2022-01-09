@@ -10,7 +10,12 @@
     "build:dev": "npm run build -- --watch --mode=development",
     "build": "webpack",
     "test": "jest --detectOpenHandles",
-    "test:dev": "npm run test -- --watch"
+    "test:dev": "npm run test -- --watch",
+    "lint": "./node_modules/.bin/eslint $(pwd)/. --fix",
+    "format:client": "prettier-eslint --write --single-quote --semi \"client/**/*.js\"",
+    "format:tests": "prettier-eslint --write --single-quote --semi \"tests/**/*.js\"",
+    "format:server": "prettier-eslint --write --single-quote --semi \"server/**/*.js\"",
+    "format": "npm run format:client && npm run format:tests && npm run format:server"
   },
   "repository": {
     "type": "git",
@@ -24,12 +29,24 @@
   },
   "homepage": "https://github.com/AnnaLitovskaya/FullstackTemplate#readme",
   "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^25.3.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "jest": "^27.4.7",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "prettier-eslint": "^13.0.0",
+    "prettier-eslint-cli": "^5.0.1"
   },
   "dependencies": {
     "express": "^4.17.2",
+    "morgan": "^1.10.0",
     "pg": "^8.7.1",
     "sequelize": "^6.12.5"
   }

@@ -1,7 +1,9 @@
+/* eslint-disable no-console */
 const { Sequelize } = require('sequelize');
+
 const db = new Sequelize(
   process.env.DATABASE_URL || 'postgres://localhost/fullstackTemplate',
-  { logging: false }
+  { logging: false },
 );
 
 // This is for the testing suite
