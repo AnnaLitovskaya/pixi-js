@@ -24,10 +24,13 @@
   },
   "homepage": "https://github.com/AnnaLitovskaya/FullstackTemplate#readme",
   "devDependencies": {
+    "jest": "^27.4.7",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "pg": "^8.7.1",
+    "sequelize": "^6.12.5"
   }
 }
