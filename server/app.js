@@ -3,7 +3,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
-// const router = require('./api/router');
+const router = require('./api/router');
 
 const app = express();
 // app.use(express.json()); //what is this for?
@@ -11,7 +11,7 @@ const app = express();
 app.use(morgan('dev'));
 // app.use('/public', express.static('./public')); // what is this for?
 
-// app.use('/api', router);
+app.use('/api', router);
 
 app.get('/', (req, res, next) => {
   try {

@@ -41,38 +41,62 @@ const syncAndSeed = async () => {
       {
         game: 'Tic Tac Toe',
         score: 6,
+        userId: 1,
       },
       {
         game: 'Tic Tac Toe',
         score: 4,
+        userId: 2,
       },
       {
         game: 'Tic Tac Toe',
         score: 8,
+        userId: 3,
+      },
+      {
+        game: 'Tic Tac Toe',
+        score: 8,
+        userId: 1,
       },
       {
         game: 'Hangman',
         score: 5,
+        userId: 1,
+      },
+      {
+        game: 'Hangman',
+        score: 5,
+        userId: 2,
       },
       {
         game: 'Hangman',
         score: 2,
+        userId: 3,
       },
       {
         game: 'Hangman',
         score: 7,
+        userId: 4,
       },
       {
         game: 'Speed Clicker',
         score: 10,
+        userId: 1,
+      },
+      {
+        game: 'Speed Clicker',
+        score: 10,
+        userId: 2,
       },
       {
         game: 'Speed Clicker',
         score: 8,
+        userId: 3,
       },
       {
         game: 'Speed Clicker',
         score: 23,
+        userId: 4,
       },
     ];
 
