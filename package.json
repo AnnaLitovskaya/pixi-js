@@ -15,7 +15,8 @@
     "format:client": "prettier --write --single-quote --semi \"client/**/*.js\"",
     "format:tests": "prettier --write --single-quote --semi \"tests/**/*.js\"",
     "format:server": "prettier --write --single-quote --semi \"server/**/*.js\"",
-    "format": "npm run format:tests && npm run format:server"
+    "format": "npm run format:tests && npm run format:server",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -59,4 +60,5 @@
     "hooks": {
         "pre-commit": "lint-staged"
     }
+  }
 }
