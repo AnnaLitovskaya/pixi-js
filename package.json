@@ -52,7 +52,11 @@
     "sequelize": "^6.12.5"
   },
   "lint-staged": {
-    "*.{js,jsx}": "eslint --cache --fix",
-    "*.{js,jsx,css}": "prettier --write"
-  }
+    "*.{js,jsx}": "npm run lint --cache --fix",
+    "*.{js,jsx,css}": "npm run format --write"
+  },
+  "husky": {
+    "hooks": {
+        "pre-commit": "lint-staged"
+    }
 }
