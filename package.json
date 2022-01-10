@@ -57,5 +57,10 @@
     "*.{js,jsx}": "npm run lint --cache --fix",
     "*.{js,jsx,css}": "npm run format --write",
     "*.js": "eslint --cache --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm test"
+    }
   }
 }
