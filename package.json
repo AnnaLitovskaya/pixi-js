@@ -41,6 +41,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^7.0.4",
     "jest": "^27.4.7",
+    "lint-staged": "^12.1.7",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
     "prettier-eslint": "^13.0.0",
@@ -54,11 +55,7 @@
   },
   "lint-staged": {
     "*.{js,jsx}": "npm run lint --cache --fix",
-    "*.{js,jsx,css}": "npm run format --write"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test"
-    }
+    "*.{js,jsx,css}": "npm run format --write",
+    "*.js": "eslint --cache --fix"
   }
 }
