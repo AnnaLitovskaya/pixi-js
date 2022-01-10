@@ -54,8 +54,8 @@
     "sequelize": "^6.12.5"
   },
   "lint-staged": {
-    "*.{js,jsx}": "npm run lint --cache --fix",
-    "*.{js,jsx,css}": "npm run format --write"
+    "*.{js,jsx}": "npm run lint",
+    "*.{js,jsx,css}": "npm run format"
   },
   "husky": {
     "hooks": {
