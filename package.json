@@ -56,10 +56,5 @@
   "lint-staged": {
     "*.{js,jsx}": "npm run lint",
     "*.{js,jsx,css}": "npm run format"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && npm run test"
-    }
   }
 }
