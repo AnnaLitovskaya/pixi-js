@@ -23,7 +23,7 @@
     "url": "git+https://github.com/AnnaLitovskaya/FullstackTemplate.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Anna Litovskaya",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AnnaLitovskaya/FullstackTemplate/issues"
@@ -58,7 +58,7 @@
   },
   "husky": {
     "hooks": {
-        "pre-commit": "lint-staged"
+      "pre-commit": "npm run test"
     }
   }
 }
