@@ -12,10 +12,10 @@
     "test": "jest --detectOpenHandles",
     "test:dev": "npm run test -- --watch",
     "lint": "./node_modules/.bin/eslint $(pwd)/. --fix",
-    "format:client": "prettier-eslint --write --single-quote --semi \"client/**/*.js\"",
-    "format:tests": "prettier-eslint --write --single-quote --semi \"tests/**/*.js\"",
-    "format:server": "prettier-eslint --write --single-quote --semi \"server/**/*.js\"",
-    "format": "npm run format:client && npm run format:tests && npm run format:server"
+    "format:client": "prettier --write --single-quote --semi \"client/**/*.js\"",
+    "format:tests": "prettier --write --single-quote --semi \"tests/**/*.js\"",
+    "format:server": "prettier --write --single-quote --semi \"server/**/*.js\"",
+    "format": "npm run format:tests && npm run format:server"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
     "jest": "^27.4.7",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
@@ -49,5 +50,9 @@
     "morgan": "^1.10.0",
     "pg": "^8.7.1",
     "sequelize": "^6.12.5"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --cache --fix",
+    "*.{js,jsx,css}": "prettier --write"
   }
 }

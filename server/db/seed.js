@@ -34,7 +34,7 @@ const syncAndSeed = async () => {
     await Promise.all(
       users.map((user) => {
         User.create(user);
-      }),
+      })
     );
 
     const highscores = [
@@ -79,7 +79,7 @@ const syncAndSeed = async () => {
     await Promise.all(
       highscores.map((highscore) => {
         Highscore.create(highscore);
-      }),
+      })
     );
   } catch (err) {
     console.log(err);
