@@ -16,4 +16,5 @@ module.exports = {
     'jest/no-conditional-expect': ['off'],
     'array-callback-return': ['off'],
   },
+  ignorePatterns: ['webpack.config.js', 'public/*'],
 };

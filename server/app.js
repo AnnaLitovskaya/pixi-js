@@ -9,7 +9,7 @@ const app = express();
 // app.use(express.json()); //what is this for?
 
 app.use(morgan('dev'));
-// app.use('/public', express.static('./public')); // what is this for?
+app.use('/public', express.static('./public'));
 
 app.use('/api', router);
 
