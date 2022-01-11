@@ -6,11 +6,12 @@ const path = require('path');
 const router = require('./api/router');
 
 const app = express();
-// app.use(express.json()); //what is this for?
 
 app.use(morgan('dev'));
 app.use('/public', express.static('./public'));
 
+app.use(express.json()); // body parser *has to come before routes
+// app.use(express.urlencoded({ extended: true }));
 app.use('/api', router);
 
 app.get('/', (req, res, next) => {
