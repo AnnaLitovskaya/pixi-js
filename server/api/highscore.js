@@ -19,7 +19,7 @@ router.get('/:id', async (req, res, next) => {
     res.send(
       await Highscore.findAll({
         where: { game: id },
-      }),
+      })
     );
   } catch (err) {
     next(err);

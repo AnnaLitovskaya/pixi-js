@@ -23,7 +23,7 @@ router.get('/:id', async (req, res, next) => {
           limit: 5,
           order: [['score', 'DESC']],
         },
-      }),
+      })
     );
   } catch (err) {
     next(err);
