@@ -12,10 +12,10 @@
     "test": "jest --detectOpenHandles",
     "test:dev": "npm run test -- --watch",
     "lint": "./node_modules/.bin/eslint $(pwd)/. --fix",
-    "format:client": "prettier --write --single-quote --semi \"client/**/*.js\"",
+    "format:client": "prettier --write --single-quote --semi \"client/**/*.js\" \"client/**/*.jsx\"",
     "format:tests": "prettier --write --single-quote --semi \"tests/**/*.js\"",
     "format:server": "prettier --write --single-quote --semi \"server/**/*.js\"",
-    "format": "npm run format:tests && npm run format:server",
+    "format": "npm run format:tests && npm run format:server && npm run format:client",
     "prepare": "husky install"
   },
   "repository": {
