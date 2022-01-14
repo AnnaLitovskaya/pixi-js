@@ -1,0 +1,8 @@
+#homepage-wrapper {
+  display: flex;
+  justify-content: stretch;
+}
+
+#homepage-image {
+  background-image: url('../../public/images/GameTime.jpeg');
+}

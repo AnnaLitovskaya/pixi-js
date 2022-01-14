@@ -1,0 +1,12 @@
+@import url('./styles/navbar.css');
+@import url('./styles/home.css');
+
+* {
+  background-color: aqua;
+  margin: 0%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
