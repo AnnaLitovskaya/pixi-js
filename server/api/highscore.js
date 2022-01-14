@@ -52,21 +52,4 @@ router.delete('/:id', async (req, res, next) => {
   }
 });
 
-// update highscore
-router.put('/:id', async (req, res, next) => {
-  try {
-    const highscoreToUpdate = await Highscore.findByPk(req.params.id);
-    const { game, score, userId } = req.body;
-
-    await highscoreToUpdate.update({
-      game,
-      score,
-      userId,
-    });
-    res.status(200).send(highscoreToUpdate);
-  } catch (err) {
-    next(err);
-  }
-});
-
 module.exports = router;
