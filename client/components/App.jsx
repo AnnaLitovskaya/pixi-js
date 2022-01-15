@@ -1,13 +1,7 @@
 /* eslint-disable react/prefer-stateless-function */
 
 import React, { Component } from 'react';
-import {
-  HashRouter as Router,
-  Link,
-  Routes,
-  Route,
-  withRouter,
-} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import Home from './Home';
 

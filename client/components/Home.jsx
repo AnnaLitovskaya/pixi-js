@@ -2,8 +2,8 @@ import React from 'react';
 
 function Home() {
   return (
-    <div id="homepage-wrapper">
-      <div id="homepage-image" />
+    <div id="landing-page-wrapper">
+      <img alt="landingpageimg" src="public/images/GameTime.jpeg" />
     </div>
   );
 }

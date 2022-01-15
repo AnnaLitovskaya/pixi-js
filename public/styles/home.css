@@ -1,8 +1,9 @@
-#homepage-wrapper {
+#landing-page-wrapper {
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
 }
 
-#homepage-image {
-  background-image: url('../../public/images/GameTime.jpeg');
+#landing-page-wrapper img {
+  width: 75%;
+  margin-top: 3rem;
 }
