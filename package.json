@@ -1,5 +1,5 @@
 {
-  "name": "simple-app",
+  "name": "pixi-js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnnaLitovskaya/simple-app.git"
+    "url": "git+https://github.com/AnnaLitovskaya/pixi-js.git"
   },
   "keywords": [],
   "author": "Anna Litovskaya",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AnnaLitovskaya/simple-app/issues"
+    "url": "https://github.com/AnnaLitovskaya/pixi-js/issues"
   },
-  "homepage": "https://github.com/AnnaLitovskaya/simple-app#readme",
+  "homepage": "https://github.com/AnnaLitovskaya/pixi-js#readme",
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-react": "^7.16.7",
@@ -43,8 +43,10 @@
     "prettier-eslint-cli": "^5.0.1"
   },
   "dependencies": {
+    "@pixi/react": "^7.1.1",
     "css-loader": "^6.5.1",
     "express": "^4.17.2",
+    "pixi.js": "^7.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "style-loader": "^3.3.1",
