@@ -7,7 +7,6 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
-    "plugin:jest/recommended",
     "eslint:recommended",
     "prettier"
   ],
@@ -19,7 +18,6 @@
   },
   "plugins": ["react"],
   "rules": {
-    "jest/no-conditional-expect": ["off"],
     "array-callback-return": ["off"]
   },
   "ignorePatterns": ["webpack.config.js", "public/*"],
